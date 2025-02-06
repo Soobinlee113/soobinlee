@@ -1,0 +1,440 @@
+body {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 500vh;
+    overflow-x: hidden;
+
+
+}
+
+
+.intro {
+    font-family: helvetica;
+    font-size: 1.5em;
+    color: black;
+    transition: all 0.3s ease-out;
+}
+
+.content {
+    padding: 50px;
+}
+
+.dynamic-text {
+    font-family: helvetica;
+    font-size: 1.5em;
+    color: black;
+    transition: all 0.3s ease-out;
+}
+
+.scroll-effect {
+    color: white;
+    transform: scale(1.5);
+}
+
+.transparent-effect {
+    opacity: 0.2;
+    /* 투명도를 0.2로 설정 */
+    transform: scale(1);
+    /* 크기를 원래대로 */
+}
+
+
+/* 레주메 이미지 컨테이너 */
+.resume-container {
+    display: none;
+    /* 처음에는 숨겨져 있음 */
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resume-image {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    /* 이미지 크기 조정 */
+    transition: opacity 1s ease-in-out;
+    /* 부드럽게 나타나는 효과 */
+}
+
+/* 이미지가 나타날 때 */
+.resume-container.show {
+    display: block;
+    opacity: 1;
+}
+
+
+
+h4 {
+    border-bottom-style: black, 1px;
+    font-size: 16px;
+    font-family: helvetica;
+    font-weight: lighter;
+
+    margin-top: 30px;
+
+}
+
+
+middle-button {
+    position: fixed;
+
+    width: 100%;
+    font-family: arial;
+    font-size: 30;
+
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+    padding: 20px 30px;
+
+    background-color: white;
+
+
+}
+
+
+
+
+
+
+.button-in-header {
+    padding: 10px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    height: 34px;
+    box-sizing: border-box;
+}
+
+
+.home-container {
+    text-align: center;
+    padding: 50px;
+}
+
+/* info 링크 스타일 */
+.info-link {
+    font-size: 10px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+}
+
+/* 레주메 이미지 컨테이너 (초기 상태: 숨김) */
+.resume-container {
+    margin-top: 20px;
+    display: none;
+    /* 기본적으로 안 보이도록 설정 */
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+}
+
+/* .show 클래스가 추가되면 컨테이너를 보이게 함 */
+.resume-container.show {
+    display: block;
+    opacity: 1;
+}
+
+/* 레주메 이미지 스타일 */
+.resume-img {
+    max-width: 90%;
+    max-height: 80vh;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.button-in-header:hover {
+    font-weight: lighter;
+}
+
+
+#header-menu {
+
+    display: flex;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid lightgrey;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.spacer {
+    height: 200px;
+    /* 스크롤 공간 */
+}
+
+
+
+
+
+.underline {
+    font-size: 30px;
+    display: inline-block;
+    /* 글자 길이에 맞추고 싶다면 추가 */
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    /* 선과 글자 사이 여백 */
+}
+
+.h5 {
+    max-width: 100%;
+    margin: 40px;
+    /* 여백을 px로 설정하여 전체 문단에 여백을 추가 */
+    font-weight: lighter;
+    font-size: 30px;
+    /* 두 번째 font-size 값을 적용 */
+    font-family: helvetica, sans-serif;
+    /* 기본 글꼴을 sans-serif로 설정 */
+    text-align: justify;
+    justify-content: center;
+    line-height: 1.6;
+    /* 줄 간격 설정 */
+    overflow-wrap: break-word;
+    /* 긴 단어나 문장이 넘어가지 않도록 처리 */
+    word-wrap: break-word;
+    /* 긴 단어가 화면을 넘지 않도록 강제 줄 바꿈 */
+    padding: 0 30px;
+    /* 내부 여백을 좌우 20px로 설정 */
+    box-sizing: border-box;
+    /* padding이 요소의 너비에 포함되도록 설정 */
+}
+
+
+
+
+
+
+
+header {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+    color: #777;
+}
+
+
+
+
+
+
+
+.main-title {
+    font-family: helvetica;
+    margin-bottom: 30px;
+    font-size: 20px;
+    justify-content: left;
+    text-align: left;
+    padding: 50px;
+    line-height: 1.2;
+
+    text-transform: uppercase;
+    /* 대문자로 변환 */
+    letter-spacing: 2px;
+    /* 글자 사이 간격을 넓혀줌 */
+    color: black;
+    /* 유니크한 색상 */
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20;
+
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    /* 기본 폰트 */
+}
+
+
+
+@keyframes waveMove {
+    0% {
+        background-position-x: 0;
+        /* 처음 위치 */
+    }
+
+    100% {
+        background-position-x: 100%;
+        /* 배경이 오른쪽으로 이동 */
+    }
+}
+
+@keyframes waveAnimation {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 100%;
+        /* 중간에 물결이 반대 방향으로 */
+    }
+
+    100% {
+        background-position: 0 0;
+        /* 처음 상태로 돌아옴 */
+    }
+}
+
+.bottom-img {
+
+    display: flex;
+    height: auto;
+    width: 90%;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-40%);
+    margin: 0 auto 50px;
+}
+
+
+
+
+.highlight {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+
+
+/* 이미지 컨테이너 설정 (일렬로 배치) */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    max-height: 80vh;
+    margin: 50px auto;
+    /* 중앙 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* 이미지 간격을 균등하게 배치 */
+    gap: 20px;
+    /* 이미지 간 간격 */
+    padding: 20px;
+}
+
+/* 각 이미지 아이템 스타일 */
+.image-item {
+    position: relative;
+    overflow: scroll;
+    /* 이미지가 넘치는 부분은 숨김 */
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+/* 이미지 크기 설정 */
+.image-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    /* 이미지 애니메이션 */
+}
+
+/* Hover 시 애니메이션 */
+.image-item:hover {
+    transform: scale(1.1);
+    /* 이미지 확대 효과 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* 그림자 효과 */
+    background-position-y: 10px;
+}
+
+.image-item:hover img {
+    transform: scale(1.1);
+    /* 이미지 확대 */
+}
+
+
+
+.highlight {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+
+.text-container {
+
+    position: relative;
+    display: inline-block;
+}
+
+.highlight {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+h2 {
+    font-size: 36px;
+    /* h2 크기 설정 */
+    font-weight: bold;
+    /* 텍스트를 두껍게 */
+    text-align: center;
+    /* 텍스트 중앙 정렬 */
+    padding: 20px;
+    /* 상하 여백 */
+    margin: 40px 0;
+    /* 문단 사이에 여백 추가 */
+    border-bottom: 3px solid white;
+    /* 문단 아래에 흰색 선 추가 */
+    text-transform: uppercase;
+    /* 텍스트를 대문자로 변환 */
+    letter-spacing: 2px;
+    /* 문자 간격을 넓혀서 포인트 추가 */
+}
+
+p {
+    font-size: 18px;
+    /* 본문 글씨 크기 */
+    line-height: 1.6;
+    /* 줄 간격 설정 */
+    margin: 0 40px;
+    /* 좌우 여백을 추가하여 텍스트가 화면 끝에 닿지 않도록 */
+    color: white;
+    /* 흰색 텍스트 */
+    text-align: justify;
+    /* 양쪽 정렬 */
+}
+
+.highlight {
+    color: #FF6347;
+    /* 포인트 색상 (tomato) */
+    font-weight: bold;
+    /* 강조된 텍스트를 굵게 */
+}
