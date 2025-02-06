@@ -1,0 +1,476 @@
+<!DOCTYPE Portfolio.html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커스텀 마우스 커서</title>
+    <style>
+        /* 기본 마우스 커서를 숨김 */
+        * {
+            cursor: none;
+        }
+
+        /* 커스텀 커서 (검정 원) */
+        .custom-cursor {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            pointer-events: none;
+            /* 클릭 방지 */
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s ease-out;
+        }
+    </style>
+</head>
+
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soobin Lee Portfolio</title>
+</head>
+<!DOCTYPE html>
+<html lang="ko">
+
+
+
+<body>
+
+    <div class="custom-cursor" id="cursor"></div>
+
+    <script>
+        document.addEventListener("mousemove", (e) => {
+            const cursor = document.getElementById("cursor");
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+    </script>
+
+</body>
+
+</html>
+
+<body>
+
+    <body>
+
+
+
+    </body>
+    <header>
+
+        <a href="document-title" class="button-in-header">
+            <div id="middle-buttons">
+                <a id="active-menu" class="button-in-header">
+
+
+
+                    <a href="/Users/user/Downloads/Resume_.pdf" id="infoLink" class="info-link">info</a>
+
+                    <!-- 레주메 이미지 컨테이너 (기본 숨김 상태) -->
+                    <div id="resumeContainer" class="resume-container">
+                        <img src="/Users/user/Downloads/Resume_.pdf" alt="Resume Image" class="resume-img">
+                    </div>
+            </div>
+
+
+</body>
+
+
+
+
+
+
+</div>
+
+<script src="script.js">function showResume() {
+        const resumeContainer = document.getElementById('resume-container');
+
+        // 이미지가 이미 보이고 있다면, 다시 숨김
+        if (resumeContainer.classList.contains('show')) {
+            resumeContainer.classList.remove('show');
+        } else {
+            // 이미지가 없으면 나타남
+            resumeContainer.classList.add('show');
+        }
+    }</script>
+
+
+
+
+<style>
+    .button-in-header:hover {
+        cursor: pointer;
+
+    }
+
+    .button-in-header:active {
+        font-weight: lighter;
+    }
+
+
+
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+    .typing-active {
+        opacity: 1;
+        animation: typing 3s steps(40, end) forwards, blink 0.7s step-end infinite;
+    }
+</style>
+</head>
+
+<body>
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>문단 타이핑 효과</title>
+        <style>
+            #typing-container {
+
+                font-size: 24px;
+                min-height: 500px;
+                font-family: Arial, sans-serif;
+                white-space: pre-line;
+                /* 줄 바꿈 유지 */
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="main-title">
+            <h1> Hello </h1>
+
+
+
+
+
+
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>물결 모양 춤추는 텍스트</title>
+
+            <body>
+                <div class="wave-text" id="waveText">
+                    My name is Soobin Lee.
+                </div>
+
+                <style>
+                    .wave-text {
+                        font-size: 3em;
+                        font-family: Arial, sans-serif;
+                        font-weight: light;
+                        white-space: nowrap;
+                    }
+
+                    .wave-text span {
+                        display: inline-block;
+                        animation: wave 1.5s ease-in-out infinite;
+                    }
+
+                    /* 물결 모양의 애니메이션 */
+                    @keyframes wave {
+                        0% {
+                            transform: translateY(0);
+                        }
+
+                        25% {
+                            transform: translateY(-10px);
+                        }
+
+                        50% {
+                            transform: translateY(0);
+                        }
+
+                        75% {
+                            transform: translateY(10px);
+                        }
+
+                        100% {
+                            transform: translateY(0);
+                        }
+                    }
+
+                    /* 각 글자에 지연 시간 다르게 적용 */
+                    .wave-text span:nth-child(1) {
+                        animation-delay: 0s;
+                    }
+
+                    .wave-text span:nth-child(2) {
+                        animation-delay: 0.1s;
+                    }
+
+                    .wave-text span:nth-child(3) {
+                        animation-delay: 0.2s;
+                    }
+
+                    .wave-text span:nth-child(4) {
+                        animation-delay: 0.3s;
+                    }
+
+                    .wave-text span:nth-child(5) {
+                        animation-delay: 0.4s;
+                    }
+
+                    .wave-text span:nth-child(6) {
+                        animation-delay: 0.5s;
+                    }
+
+                    .wave-text span:nth-child(7) {
+                        animation-delay: 0.6s;
+                    }
+                </style>
+                </head>
+
+
+
+
+                <div class="content">
+                    <p>
+
+
+                        <span class="dynamic-text">Hi, I'm Soobin Lee, a passionate graphic designer with a keen eye for
+                            inspiration and a knack for
+                            bringing ideas to life digitally.</span>
+                        <span class="dynamic-text">With a year and a half of professional experience and an internship
+                            after
+                            graduating from Humber
+                            College in Canada.</span>
+                        <span class="dynamic-text">I specialize in creating visually compelling designs that communicate
+                            ideas effectively.</span>
+                        <span class="dynamic-text">"Now, take a look at some of my work below. Scroll down to
+                            explore"</span>
+                    </p>
+                </div>
+                <script> window.addEventListener('scroll', function () {
+                        const dynamicTextElements = document.querySelectorAll('.dynamic-text');
+                        const scrollPosition = window.scrollY;
+
+                        // 스크롤 위치가 100px 이상일 때 텍스트 스타일 변경
+                        dynamicTextElements.forEach(element => {
+                            if (scrollPosition > 100) {
+                                element.classList.add('scroll-effect');
+                                element.classList.remove('transparent-effect'); // 투명도 효과 제거
+                            } else {
+                                element.classList.remove('scroll-effect');
+                                element.classList.add('transparent-effect'); // 투명도 효과 추가
+                            }
+                        });
+                    });
+                </script>
+
+        </div>
+
+
+
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+</script>
+
+<title>Photography</title>
+<style>
+    .radial-text {
+        display: inline-block;
+        position: relative;
+        padding: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .radial-text::before {
+        content: '';
+        position: absolute;
+        top: -40px;
+        left: -40px;
+
+        border: 1px solid black;
+        /* 원형 선의 색 */
+        border-radius: 10%;
+        z-index: -1;
+    }
+</style>
+</head>
+
+
+<span class="intro">During my time as a Graphic Designer at Minimore Jewels,
+    I developed a strong understanding of branding. I was responsible for photography,
+    where I carefully selected color tones that conveyed a calm,
+    dainty,
+    and modern atmosphere,
+    ensuring consistent and cohesive brand identity across all materials. </span>
+
+
+</html>
+<div class="image-container">
+
+
+    <div class="image-item">
+        <img src="/Users/user/Downloads/gt002-a_3000x.webp" alt="Image 2">
+    </div>
+    <div class="image-item">
+        <img src="/Users/user/Downloads/hp012-b_3000x.webp" alt="Image 3">
+    </div>
+    <div class="image-item">
+        <img src="/Users/user/Downloads/gt001-11_3000x.webp" alt="Image 4">
+    </div>
+    <div class="image-item">
+        <img src="/Users/user/Downloads/hp011B-a_3000x.webp" alt="Image 4">
+    </div>
+    <div class="image-item">
+        <img src="/Users/user/Downloads/SV025-v2-9-3_3000x.webp" alt="Image 4">
+    </div>
+    <div class="image-item">
+        <img src="/Users/user/Downloads/SV017B-1_3000x.webp" alt="Image 4">
+    </div>
+
+    <script>
+        // 페이지가 모두 로드된 후 애니메이션 시작
+        window.addEventListener('load', () => {
+            const gridItems = document.querySelectorAll('.image-item');
+
+            gridItems.forEach((item, index) => {
+                // 각 이미지에 약간의 딜레이를 주어 순차적으로 나타나게 합니다.
+                setTimeout(() => {
+                    item.classList.add('show');
+                }, index * 300); // 300ms 간격 (원하는 시간으로 조절)
+            });
+        });
+
+    </script>
+
+</div>
+
+
+
+
+
+</script>
+
+
+
+<body>
+
+    <header>
+
+        <p>Scroll down!</p>
+    </header>
+
+    <body>
+
+        <div class="grid-container">
+            <div class="grid-item item-1">
+                <div class="vertical-line"></div> <!-- 가운데 가로선 -->
+
+
+                <img src="/Users/user/Desktop/Bliss mockups.png" class="bottom-img" alt="올라오는 이미지">
+            </div>
+
+
+    </body>
+
+
+    </div>
+
+    <head>
+
+        <title>Typing Effect</title>
+        <style>
+            body {
+                font-family: 'Courier New', monospace;
+                text-align: center;
+                margin-top: 50px;
+            }
+
+            .typing-container {
+                display: inline-block;
+                text-align: left;
+            }
+
+            .line {
+                font-size: 24px;
+                white-space: nowrap;
+                border-right: 2px solid black;
+                overflow: hidden;
+                display: block;
+            }
+        </style>
+    </head>
+
+
+
+
+
+    <script>
+
+        document.addEventListener('mousemove', function (e) {
+            const text = document.querySelector('.typing-text');
+
+            // 마우스의 x 좌표를 가져오기
+            const mouseX = e.clientX;
+
+            // 화면 너비를 기준으로 비율 계산
+            const screenWidth = window.innerWidth;
+            const rotateAmount = (mouseX / screenWidth - 0.5) * 30; // 최대 기울기 각도 30도
+
+            // 텍스트 회전
+            text.style.transform = `rotate(${rotateAmount}deg)`;
+        });
+
+
+        const textElements = gsap.utils.toArray('#inc01 .b_txt');
+
+        textElements.forEach(text => {
+            gsap.to(text, {
+
+                backgroundSize: '100%',
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: text,
+                    start: 'center 90%',
+                    end: 'bottom 10%',
+                    scrub: true,
+                }
+
+                ,
+            });
+        });
+
+
+
+    </script>
